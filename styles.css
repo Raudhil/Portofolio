@@ -91,11 +91,12 @@ li a:hover{
 }
 
 #muncul{
-    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
 
 #toggleButton:checked ~ #muncul{
-    display: flex;
+    opacity: 1;
     
 }
 
@@ -112,6 +113,7 @@ li a:hover{
     position: absolute;
     right: -35px;
     padding: 5px;
+
 }
 
 .navigasi2{
