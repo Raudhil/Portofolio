@@ -6,7 +6,29 @@
 
 body{
     background-color: #DDF2FD;
+    height: 200vh;
 }
+
+
+
+.song{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0pc;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+
+
+
+/* Navbar */
 
 nav{
     width: 100vw;
@@ -16,6 +38,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
 }
 
 .nama{
@@ -64,7 +89,8 @@ li a:hover{
 
 .container{
     margin-right: 30px;
-    
+    position: absolute;
+    right: 10px;
 }
 
 #toggleButton{
@@ -123,4 +149,71 @@ li a:hover{
 
 .navigasi, .navigasi2 {
     text-transform: uppercase;
+}
+
+
+
+
+/* Profile */
+
+.profile{
+    margin-top: 25vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.raul{
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    
+    
+}
+
+.container21 h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    
+}
+
+.container21{
+    width: 45vw;
+}
+
+.container21 p{
+    text-align: justify;
+}
+
+.nama1{
+    color:darkorange ;
+}
+
+@media only screen and (max-width:600px) {
+    
+    .profile{
+        margin-top: 300px;
+        flex-direction: column-reverse;
+        
+    }
+
+    .container21{
+        width: 60vw;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .container21 h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container21 p{
+        font-size: 15px;
+        text-align: center;
+    }
+
 }
