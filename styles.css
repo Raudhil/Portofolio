@@ -21,6 +21,93 @@ body{
 
 }
 
+.hide{
+    position:fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;  
+    bottom: 100px;
+    left: 50%;
+    
+}
+
+.hide:active{
+    
+}
+
+.eye{
+    width: 20px;
+    height: 20px;
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.eye:hover, .eye2:hover{
+    background-color: rgb(254, 217, 147);
+}
+
+.eye:active{
+    background-color: rgb(160, 138, 96);
+    
+}
+
+.eye2{
+    padding: 5px;
+    border-radius: 20px;
+    width: 20px;
+    background-color: wheat;
+    transition: 0.5s ease;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.eye23{
+    padding: 5px;
+    border-radius: 20px;
+    width: 20px;
+    background-color: wheat;
+    transition: 0.5s ease;
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    top: 0px;
+    
+}
+
+#muncul23{
+    opacity: 0;
+}
+
+#toggleButton2{
+    opacity: 0;
+}
+
+
+#muncul2{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+#toggleButton2:checked ~ #muncul3{
+    opacity: 0;
+    
+}
+
+.eye23{
+    opacity: 0;
+}
+
+.lagu{
+    margin-top: 5px;
+}
+
+
 
 
 
