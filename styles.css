@@ -11,28 +11,26 @@ body{
 
 
 
-.song{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    bottom: 0pc;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-}
+
+/* Lagu */
 
 .hide{
     position:fixed;
     z-index: 2;
     display: flex;
     flex-direction: column;  
-    bottom: 100px;
-    left: 50%;
+    bottom: 50px;
+    left: 1%;
+    transition: bottom 0.5s ease;
     
 }
 
-.hide:active{
-    
+
+
+#toggleButton2:checked ~ .hide{
+    background-color: red;
+
 }
 
 .eye{
@@ -80,7 +78,7 @@ body{
     
 }
 
-#muncul23{
+.muncul23{
     opacity: 0;
 }
 
@@ -89,23 +87,39 @@ body{
 }
 
 
-#muncul2{
+.muncul2{
     opacity: 1;
     transition: opacity 0.2s ease;
 }
 
-#toggleButton2:checked ~ #muncul3{
+#toggleButton2:checked ~ .muncul3{
     opacity: 0;
     
 }
+
 
 .eye23{
     opacity: 0;
 }
 
 .lagu{
-    margin-top: 5px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    left: 50px;
+    transition: bottom 0.5s ease;
 }
+
+#toggleButton2:checked ~ .lagu{
+    bottom: -80px;
+}
+
+
+
+
+
+
 
 
 
